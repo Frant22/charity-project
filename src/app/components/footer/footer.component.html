@@ -1,0 +1,92 @@
+<footer class="footer" id="footer">
+  <div class="footer__container" [ngSwitch]="language">
+
+    <div class="footer__header" *ngSwitchCase="'Ukrainian'">
+      Контакти
+    </div>
+    <div class="footer__header" *ngSwitchCase="'English'">
+      Contacts
+    </div>
+    <div class="footer__header" *ngSwitchCase="'Deutsche'">
+      Kontakte
+    </div>
+    <div class="footer__header" *ngSwitchCase="'Français'">
+      Contacts
+    </div>
+    <div class="footer__header" *ngSwitchCase="'Russian'">
+      Контакты
+    </div>
+
+    <div class="footer__wrapp">
+      <div class="footer__contacts">
+
+        <div class="footer__phone" *ngSwitchCase="'Ukrainian'">
+          Дар'я (адміністратор):<br> <a href="tel:+380932685455">+380 93 268 5455</a>
+        </div>
+        <div class="footer__phone" *ngSwitchCase="'English'">
+          Daria (administrator):<br> <a href="tel:+380932685455">+380 93 268 5455</a>
+        </div>
+        <div class="footer__phone" *ngSwitchCase="'Deutsche'">
+          Daria (administratrice):<br> <a href="tel:+380932685455">+380 93 268 5455</a>
+        </div>
+        <div class="footer__phone" *ngSwitchCase="'Français'">
+          Daria (administratrice):<br> <a href="tel:+380932685455">+380 93 268 5455</a>
+        </div>
+        <div class="footer__phone" *ngSwitchCase="'Russian'">
+          Даръя (администратор):<br> <a href="tel:+380932685455">+380 93 268 5455</a>
+        </div>
+        <div class="footer__maps">
+
+          <a
+            href="https://goo.gl/maps/t7TmfXYPWbh5rUAKA"
+            target="_blank"
+            *ngSwitchCase="'Ukrainian'">
+            м.Київ, Вул. Бастіонна 5A
+          </a>
+          <a
+            href="https://goo.gl/maps/t7TmfXYPWbh5rUAKA"
+            target="_blank"
+            *ngSwitchCase="'English'">
+            Kyiv, Bastionna st. 5A
+          </a>
+          <a
+            href="https://goo.gl/maps/t7TmfXYPWbh5rUAKA"
+            target="_blank"
+            *ngSwitchCase="'Deutsche'">
+            Kiew, Bastionnaja str. 5A
+          </a>
+          <a
+            href="https://goo.gl/maps/t7TmfXYPWbh5rUAKA"
+            target="_blank"
+            *ngSwitchCase="'Français'">
+            Kyiv, Rue Bastiona 5A
+          </a>
+          <a
+            href="https://goo.gl/maps/t7TmfXYPWbh5rUAKA"
+            target="_blank"
+            *ngSwitchCase="'Russian'">
+            г.Киев, ул. Бастионна
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="footer__links">
+        Ми у мережах:
+        <div class="footer__links_wrapp">
+          <div class="footer__links_icon">
+            <a href="https://www.facebook.com/center.nashe.detstvo/">
+              <img src="assets/img/facebook.svg" alt="fb-logo" />
+            </a>
+          </div>
+          <div class="footer__links_icon">
+            <a href="https://www.instagram.com/_nashe.dutunstvo_">
+              <img src="assets/img/instagram.svg" alt="inst-logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

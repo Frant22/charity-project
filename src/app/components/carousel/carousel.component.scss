@@ -1,0 +1,26 @@
+::ng-deep {
+  .slick-track {
+    display: flex;
+  }
+  .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 30px;
+    line-height: 1;
+    color: #005C94;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .slick-next {
+    right: -17px
+  }
+
+  .slick-prev {
+    left: -28px
+  }
+}

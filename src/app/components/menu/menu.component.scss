@@ -1,0 +1,110 @@
+.menu {
+  &__list {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    padding-top: 80px;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    transition-property: visibility, transform, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+    background-color: #005C94;
+    color: #c9c9c9;
+
+    z-index: 1;
+  }
+
+  &__check {
+    display: none;
+  }
+
+  &__toggle {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  &__line {
+    position: absolute;
+    top: 32px;
+    right: 26px;
+    width: 24px;
+    height: 1px;
+    background-color: #005C94;
+    z-index: 2;
+    transition-duration: 0.3s;
+
+    display: none;
+
+    &-second,
+    &-third {
+      top: 38.5px;
+      right: 32.5px;
+    }
+
+    &-fourth {
+      top: 45px;
+    }
+  }
+
+  &__link {
+    line-height: 50px;
+    font-size: 1.2rem;
+    width: inherit;
+    padding-left: 20vw;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(228, 228, 228);
+      color: #595b5c;
+    }
+  }
+
+  &__check:checked ~ &__list {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &__check:checked ~ &__line-first {
+    display: none;
+  }
+
+  &__check:checked ~ &__line-second {
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+
+  &__check:checked ~ &__line-third {
+    transform: rotate(-45deg);
+    background-color: #fff;
+  }
+
+  &__check:checked ~ &__line-fourth {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .menu {
+    &__line {
+      display: initial;
+    }
+  }
+}

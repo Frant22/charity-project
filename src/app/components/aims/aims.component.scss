@@ -1,0 +1,32 @@
+.aims {
+  &__text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  &__text strong {
+    font-size: larger;
+  }
+
+  &__text ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
+  &__header {
+    font-size: 25px;
+    font-family: 'Comfortaa';
+    line-height: 1.55;
+    font-weight: 400;
+  }
+
+  &__footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Comfortaa';
+    line-height: 1.55;
+    font-weight: 400;
+  }
+}

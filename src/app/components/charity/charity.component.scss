@@ -1,0 +1,88 @@
+.charity {
+  &__header {
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Comfortaa',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__footer {
+    font-size: 25px;
+    font-family: 'Comfortaa';
+    line-height: 1.55;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  &__text {
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    line-height: 1.55;
+    text-align: start;
+    font-weight: 400;
+
+    p {
+      line-height: 1.55;
+    }
+  }
+
+  &__mail {
+    color: #005c94;
+  }
+
+  &__wrapp {
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    border-radius: 13px;
+    border: #005c94 2px solid;
+  }
+
+  &__image {
+    position: relative;
+    height: 226px;
+
+    transition: 0.3s;
+
+    &_last:hover::before {
+      content: '+';
+      font-size: 140px;
+      font-family: 'Comfortaa', sans-serif;
+      color: #82b4da;
+
+      position: absolute;
+      top: 15%;
+      left: 35%;
+
+      z-index: 10;
+    }
+
+    &_last:hover > img {
+      filter: blur(1.5px);
+    }
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .charity {
+    &__wrapp {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .charity {
+    &__text {
+      font-size: 17px;
+    }
+  }
+}

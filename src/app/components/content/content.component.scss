@@ -1,0 +1,36 @@
+.content {
+  background-color: rgba(255, 255, 255, 0.3);
+  max-width: 992px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 15px 60px 60px;
+
+  &__container {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 25px 25px 30px 25px;
+    border-radius: 15px;
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  &__text strong {
+    font-size: larger;
+  }
+
+  &__text ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .content {
+    padding: 15px 30px;
+  }
+}
+
+

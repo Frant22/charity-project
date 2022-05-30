@@ -1,0 +1,47 @@
+.footer{
+  color: #c9c9c9;
+  font-size: 18px;
+  font-family: 'Comfortaa';
+  line-height: 1.55;
+  background-color: #003352;
+  padding: 30px 20px;
+
+  &__container{
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  &__header{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  &__wrapp{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__maps{
+    margin-top: 15px;
+  }
+
+  &__links{
+    text-align: center;
+
+    &_wrapp{
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &_icon{
+      width: 35px;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

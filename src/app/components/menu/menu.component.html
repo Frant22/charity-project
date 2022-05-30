@@ -1,0 +1,78 @@
+<div class="header__menu menu" [ngSwitch]="language">
+  <input
+    type="checkbox"
+    id="menu"
+    #menu
+    class="menu__check"
+  >
+  <label for="menu" class="menu__toggle"></label>
+  <div class="menu__line menu__line-first"></div>
+  <div class="menu__line menu__line-second"></div>
+  <div class="menu__line menu__line-third"></div>
+  <div class="menu__line menu__line-fourth"></div>
+
+  <nav
+    class="menu__list"
+    *ngSwitchCase="'Ukrainian'"
+    (click)="closeMenu()"
+  >
+    <a [routerLink]="['/']" class="link menu__link">Головна</a>
+    <a [routerLink]="['/directions']" class="link menu__link">Напрями центру</a>
+    <a [routerLink]="['/teachers']" class="link menu__link">Викладачі центру</a>
+    <a [routerLink]="['/aims']" class="link menu__link">Наші цілі</a>
+    <a [routerLink]="['/events']" class="link menu__link">Події центру</a>
+    <a (click)="moveToFooter()" class="link menu__link">Контакти</a>
+  </nav>
+
+  <nav
+    class="menu__list"
+    *ngSwitchCase="'English'"
+    (click)="closeMenu()"
+  >
+    <a [routerLink]="['/']" class="link menu__link">Home</a>
+    <a [routerLink]="['/directions']" class="link menu__link">Directions</a>
+    <a [routerLink]="['/teachers']" class="link menu__link">Teachers</a>
+    <a [routerLink]="['/aims']" class="link menu__link">Our goals</a>
+    <a [routerLink]="['/events']" class="link menu__link">Events</a>
+    <a (click)="moveToFooter()" class="link menu__link">Contacts</a>
+  </nav>
+
+  <nav
+    class="menu__list"
+    *ngSwitchCase="'Deutsche'"
+    (click)="closeMenu()"
+  >
+    <a [routerLink]="['/']" class="link menu__link">Heimat</a>
+    <a [routerLink]="['/directions']" class="link menu__link">Richtungen</a>
+    <a [routerLink]="['/teachers']" class="link menu__link">Lehrer</a>
+    <a [routerLink]="['/aims']" class="link menu__link">Unsere Ziele</a>
+    <a [routerLink]="['/events']" class="link menu__link">Veranstaltungen</a>
+    <a (click)="moveToFooter()" class="link menu__link">Kontakte</a>
+  </nav>
+
+  <nav
+    class="menu__list"
+    *ngSwitchCase="'Français'"
+    (click)="closeMenu()"
+  >
+    <a [routerLink]="['/']" class="link menu__link">Principalle</a>
+    <a [routerLink]="['/directions']" class="link menu__link">Directions</a>
+    <a [routerLink]="['/teachers']" class="link menu__link">Enseignants</a>
+    <a [routerLink]="['/aims']" class="link menu__link">Nos buts</a>
+    <a [routerLink]="['/events']" class="link menu__link">Événements</a>
+    <a (click)="moveToFooter()" class="link menu__link">Contacts</a>
+  </nav>
+
+  <nav
+    class="menu__list"
+    *ngSwitchCase="'Russian'"
+    (click)="closeMenu()"
+  >
+    <a [routerLink]="['/']" class="link menu__link">Главная</a>
+    <a [routerLink]="['/directions']" class="link menu__link">Направления</a>
+    <a [routerLink]="['/teachers']" class="link menu__link">Преподаватели</a>
+    <a [routerLink]="['/aims']" class="link menu__link">Наши цели</a>
+    <a [routerLink]="['/events']" class="link menu__link">События центра</a>
+    <a (click)="moveToFooter()" class="link menu__link">Контакты</a>
+  </nav>
+</div>

@@ -1,0 +1,229 @@
+<header class="header">
+  <div class="header__wrapp" [ngSwitch]="selectedLanguage">
+    <div class="header__logo"></div>
+    <div class="header__menu" *ngSwitchCase="'Ukrainian'">
+      <div class="header__top">
+        <mat-form-field appearance="standard">
+          <mat-select (selectionChange)="selectLanguage($event)" [(value)]="selectedLanguage">
+            <mat-option *ngFor="let language of languages" [value]="language.value">
+              {{language.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="header__btn">
+          <a [routerLink]="['/charity']">Благодійність</a>
+          <img src="assets/img/hend.svg" alt="hend" />
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item">
+              <a [routerLink]="['/events']">Події центру</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/teachers']">Викладачі центру</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/directions']">Напрями центру</a>
+            </li>
+          </div>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/']">Головна</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/aims']">Наші цілі</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a (click)="moveToFooter()">Контакти</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <app-menu></app-menu>
+    </div>
+
+    <div class="header__menu" *ngSwitchCase="'English'">
+      <div class="header__top">
+        <mat-form-field appearance="standard">
+          <mat-select (selectionChange)="selectLanguage($event)" [(value)]="selectedLanguage">
+            <mat-option *ngFor="let language of languages" [value]="language.value">
+              {{language.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="header__btn">
+          <a [routerLink]="['/charity']">Charity</a>
+          <img src="assets/img/hend.svg" alt="hand" />
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item">
+              <a [routerLink]="['/events']">Events</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/teachers']">Teachers</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/directions']">Directions</a>
+            </li>
+          </div>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/']">Home</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/aims']">Our goals</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a (click)="moveToFooter()">Contacts</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <app-menu></app-menu>
+    </div>
+
+    <div class="header__menu" *ngSwitchCase="'Deutsche'">
+      <div class="header__top">
+        <mat-form-field appearance="standard">
+          <mat-select (selectionChange)="selectLanguage($event)" [(value)]="selectedLanguage">
+            <mat-option *ngFor="let language of languages" [value]="language.value">
+              {{language.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="header__btn">
+          <a [routerLink]="['/charity']">Wohltätigkeit</a>
+          <img src="assets/img/hend.svg" alt="hend" />
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item">
+              <a [routerLink]="['/events']">Veranstaltungen</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/teachers']">Lehrer</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/directions']">Richtungen</a>
+            </li>
+          </div>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/']">Heimat</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/aims']">Unsere Ziele</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a (click)="moveToFooter()">Kontakte</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <app-menu></app-menu>
+    </div>
+
+    <div class="header__menu" *ngSwitchCase="'Français'">
+      <div class="header__top">
+        <mat-form-field appearance="standard">
+          <mat-select (selectionChange)="selectLanguage($event)" [(value)]="selectedLanguage">
+            <mat-option *ngFor="let language of languages" [value]="language.value">
+              {{language.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="header__btn">
+          <a [routerLink]="['/charity']">Charité</a>
+          <img src="assets/img/hend.svg" alt="hend" />
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item">
+              <a [routerLink]="['/events']">Événements</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/teachers']">Enseignants</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/directions']">Directions</a>
+            </li>
+          </div>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/']">Principalle</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/aims']">Nos buts</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a (click)="moveToFooter()">Contacts</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <app-menu></app-menu>
+    </div>
+
+    <div class="header__menu" *ngSwitchCase="'Russian'">
+      <div class="header__top">
+        <mat-form-field appearance="standard">
+          <mat-select (selectionChange)="selectLanguage($event)" [(value)]="selectedLanguage">
+            <mat-option *ngFor="let language of languages" [value]="language.value">
+              {{language.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="header__btn">
+          <a [routerLink]="['/charity']">Благотворительность</a>
+          <img src="assets/img/hend.svg" alt="hend" />
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item">
+              <a [routerLink]="['/events']">События центра</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/teachers']">Преподаватели</a>
+            </li>
+            <li class="header__nav_item">
+              <a [routerLink]="['/directions']">Направления</a>
+            </li>
+          </div>
+          <div class="header__nav_wrapp">
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/']">Главная</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a [routerLink]="['/aims']">Наши цели</a>
+            </li>
+            <li class="header__nav_item header__nav_item_bottom">
+              <a (click)="moveToFooter()">Контакты</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <app-menu></app-menu>
+    </div>
+  </div>
+</header>
