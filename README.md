@@ -1,4 +1,4 @@
-# Candidate form
+# Charity project
 
 [DEMO](https://frant22.github.io/charity-project/)
 
