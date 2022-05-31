@@ -14,7 +14,7 @@ export class TeachersComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.appService.language$
+    this.appService.getLanguage()
       .subscribe((language) => this.language = language);
   }
 }

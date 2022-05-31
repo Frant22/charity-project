@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {AppService} from "../../app.service";
 
 @Component({
   selector: 'app-content',
@@ -9,13 +8,7 @@ import {AppService} from "../../app.service";
 
 export class ContentComponent implements OnInit {
 
-  public language!: string;
+  constructor( ) { }
 
-  constructor(
-    private appService : AppService
-  ) { }
-
-  ngOnInit(): void {
-    this.appService.setLanguage(localStorage.getItem('language')!);
-  }
+  ngOnInit(): void { }
 }

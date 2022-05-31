@@ -1,4 +1,4 @@
-import {Component, DoCheck, EventEmitter, Input, OnChanges, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {ViewportScroller} from "@angular/common";
 import {AppService} from "../../app.service";
 
@@ -9,7 +9,6 @@ import {AppService} from "../../app.service";
 })
 export class HeaderComponent implements OnInit {
 
-  public currentInfo = 'main';
   public selectedLanguage!: string;
 
   languages = [
@@ -29,9 +28,9 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.appService.language$
-      .subscribe((language) => this.selectedLanguage = language);
-    console.log(this.selectedLanguage)
+    this.appService.getLanguage()
+      .subscribe(language =>
+        this.selectedLanguage = language);
   }
 
   moveToFooter() {
@@ -44,9 +43,4 @@ export class HeaderComponent implements OnInit {
 
     localStorage.setItem('language', event.value);
   }
-
-  // selectInfo(event: string) {
-  //   this.currentInfo = event;
-  //   this.selectedInfo.emit(event);
-  // }
 }
