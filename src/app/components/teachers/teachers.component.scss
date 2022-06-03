@@ -4,7 +4,7 @@
 
   &__photo {
     display: block;
-    margin: 0 auto;
+    margin: 0;
     max-width: 195px;
     max-height: 245px;
   }
@@ -22,6 +22,7 @@
   }
 
   &__cart {
+    position: relative;
     max-width: 235px;
     max-height: 325px;
     padding: 15px;
@@ -35,8 +36,8 @@
       background-color: #fdbc00;
       border-radius: 50%;
       position: absolute;
-      top: -33%;
-      left: -20px;
+      top: 77%;
+      left: -3%;
       cursor: pointer;
     }
 
@@ -49,7 +50,7 @@
     }
 
     &_wrapp {
-      position: relative;
+      max-width: 195px;
       padding-top: 5px;
     }
 

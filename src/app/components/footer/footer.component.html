@@ -73,7 +73,11 @@
       </div>
 
       <div class="footer__links">
-        Ми у мережах:
+        <div *ngSwitchCase="'Ukrainian'">Ми у мережах:</div>
+        <div *ngSwitchCase="'English'">We are in social networks:</div>
+        <div *ngSwitchCase="'Deutsche'">Wir sind in sozialen Netzwerken:</div>
+        <div *ngSwitchCase="'Français'">Nous sommes sur les réseaux sociaux:</div>
+        <div *ngSwitchCase="'Russian'">Мы в соцсетях:</div>
         <div class="footer__links_wrapp">
           <div class="footer__links_icon">
             <a href="https://www.facebook.com/center.nashe.detstvo/">

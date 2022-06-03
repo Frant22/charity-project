@@ -35,7 +35,8 @@
   }
 
   &__wrapp {
-    margin-top: 5px;
+    width: fit-content;
+    margin: 5px auto 0;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -48,7 +49,7 @@
 
   &__image {
     position: relative;
-    height: 226px;
+    max-height: 226px;
 
     transition: 0.3s;
 

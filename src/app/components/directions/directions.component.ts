@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppService} from "../../app.service";
 
 @Component({
   selector: 'app-directions',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectionsComponent implements OnInit {
 
-  constructor() { }
+  public language!: string;
+
+  constructor(
+    private appService : AppService
+  ) { }
 
   ngOnInit(): void {
+    this.appService.getLanguage()
+      .subscribe((language) => this.language = language);
   }
-
 }
