@@ -41,17 +41,15 @@
       cursor: pointer;
     }
 
-    &_circle:hover {
-      z-index: 10;
-    }
-
-    &_circle:hover &_descr {
-      display: block;
-    }
-
     &_wrapp {
       max-width: 195px;
       padding-top: 5px;
+
+      &:hover {
+        .teachers__cart_descr {
+          display: block;
+        }
+      }
     }
 
     &_work, &_name {

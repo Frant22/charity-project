@@ -53,17 +53,24 @@
 
     transition: 0.3s;
 
-    &_last:hover::before {
-      content: '+';
-      font-size: 140px;
-      font-family: 'Comfortaa', sans-serif;
-      color: #82b4da;
+    &_last {
+      .plus-icon {
+        opacity: 0;
+        font-size: 140px;
+        font-family: 'Comfortaa', sans-serif;
+        color: #82b4da;
 
-      position: absolute;
-      top: 15%;
-      left: 35%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-      z-index: 10;
+        z-index: 10;
+      }
+
+      &:hover > .plus-icon {
+        animation: .3s linear appearance forwards;
+      }
     }
 
     &_last:hover > img {
@@ -85,5 +92,11 @@
     &__text {
       font-size: 17px;
     }
+  }
+}
+
+@keyframes appearance {
+  to {
+    opacity: 1;
   }
 }

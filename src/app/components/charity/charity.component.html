@@ -88,38 +88,40 @@
     <p *ngSwitchCase="'Russian'">Отчет</p>
 
     <div class="content__charity_block">
-    <div class="charity__text">
+      <div class="charity__text">
 
-      <p *ngSwitchCase="'Ukrainian'">
-        У квітні 2022 року наші волонтери постачали заморожене м’ясо курки до установ, що звертались до нас та потребували допомоги для годування людей.
-      </p>
-      <p *ngSwitchCase="'English'">
-        In April 2022, our volunteers delivered frozen chicken meat to institutions that approached us and needed help to feed people.
-      </p>
-      <p *ngSwitchCase="'Deutsche'">
-        Im April 2022 lieferten unsere Freiwilligen gefrorenes Hühnerfleisch an Einrichtungen, die auf uns zukamen und Hilfe benötigten, um Menschen zu ernähren.
-      </p>
-      <p *ngSwitchCase="'Français'">
-        En avril 2022, nos bénévoles ont livré de la viande de poulet congelée aux institutions qui nous ont approchés et qui avaient besoin d'aide pour nourrir les gens.
-      </p>
-      <p *ngSwitchCase="'Russian'">
-        В апреле 2022 года наши волонтеры поставляли замороженное мясо курицы в учреждения, которые обращались к нам и нуждались в помощи для кормления людей.
-      </p>
+        <p *ngSwitchCase="'Ukrainian'">
+          У квітні 2022 року наші волонтери постачали заморожене м’ясо курки до установ, що звертались до нас та потребували допомоги для годування людей.
+        </p>
+        <p *ngSwitchCase="'English'">
+          In April 2022, our volunteers delivered frozen chicken meat to institutions that approached us and needed help to feed people.
+        </p>
+        <p *ngSwitchCase="'Deutsche'">
+          Im April 2022 lieferten unsere Freiwilligen gefrorenes Hühnerfleisch an Einrichtungen, die auf uns zukamen und Hilfe benötigten, um Menschen zu ernähren.
+        </p>
+        <p *ngSwitchCase="'Français'">
+          En avril 2022, nos bénévoles ont livré de la viande de poulet congelée aux institutions qui nous ont approchés et qui avaient besoin d'aide pour nourrir les gens.
+        </p>
+        <p *ngSwitchCase="'Russian'">
+          В апреле 2022 года наши волонтеры поставляли замороженное мясо курицы в учреждения, которые обращались к нам и нуждались в помощи для кормления людей.
+        </p>
 
-      <div class="charity__wrapp">
-        <img class="charity__image" src="assets/img/report/1.jpg" alt="report_photo" />
-        <img class="charity__image" src="assets/img/report/2.jpg" alt="report_photo" />
-        <img class="charity__image" src="assets/img/report/11.jpg" alt="report_photo" />
-        <button
-          [routerLink]="['/gallery']"
-          [queryParams]="{ topic:'report' }"
-          class="charity__image charity__image_last"
-        >
-          <img class="charity__image" src="assets/img/report/5.jpg" alt="report_photo" />
-        </button>
+        <div class="charity__wrapp">
+          <img class="charity__image" src="assets/img/report/1.jpg" alt="report_photo" />
+          <img class="charity__image" src="assets/img/report/2.jpg" alt="report_photo" />
+          <img class="charity__image" src="assets/img/report/11.jpg" alt="report_photo" />
+          <button
+            [routerLink]="['/gallery']"
+            [queryParams]="{ topic:'report' }"
+            class="charity__image charity__image_last"
+          >
+            <img class="charity__image" src="assets/img/report/5.jpg" alt="report_photo" />
+            <div class="plus-icon">+</div>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
+
     <div class="charity__block">
       <div class="charity__text">
 
@@ -143,6 +145,41 @@
           <img class="charity__image" src="assets/img/report_woman/2.jpg" alt="" />
           <img class="charity__image" src="assets/img/report_woman/3.jpg" alt="" />
           <img class="charity__image" src="assets/img/report_woman/1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="charity__block">
+      <div class="charity__text">
+
+        <p *ngSwitchCase="'Ukrainian'">
+          У травні до нас звернулися волонтери з церкви. На їх забезпечені знаходяться понад 300 осіб. Їм надано притулок, харчування та догляд. Серед них діти та важкохворі особи, котрих евакуювали з ділянок, де йдуть активні бойові дії.
+        </p>
+        <p *ngSwitchCase="'English'">
+          In May, volunteers from the church contacted us. More than 300 people are supported by them. They were given shelter, food and care. Among them are children and seriously ill persons who were evacuated from areas where active hostilities are taking place.
+        </p>
+        <p *ngSwitchCase="'Deutsche'">
+          Im Mai kamen Freiwillige der Kirche auf uns zu. Mehr als 300 Menschen werden von ihnen unterstützt. Sie bekamen Unterkunft, Nahrung und Pflege. Unter ihnen sind Kinder und Schwerkranke, die aus Gebieten evakuiert wurden, in denen aktive Kampfhandlungen stattfinden.
+        </p>
+        <p *ngSwitchCase="'Français'">
+          En mai, des bénévoles de l'église nous ont approchés. Plus de 300 personnes sont soutenues par eux. Ils ont été hébergés, nourris et soignés. Parmi eux se trouvent des enfants et des personnes gravement malades qui ont été évacuées des zones où se déroulent des hostilités actives.
+        </p>
+        <p *ngSwitchCase="'Russian'">
+          В мае к нам обратились волонтеры из церкви. На них обеспечены более 300 человек. Им предоставлено убежище, питание и уход. Среди них дети и тяжелобольные лица, эвакуированные с участков, где идут активные боевые действия.
+        </p>
+
+        <div class="charity__wrapp">
+          <img class="charity__image" src="assets/img/report_church/1.jpg" alt="report_church_photo" />
+          <img class="charity__image" src="assets/img/report_church/2.jpg" alt="report_church_photo" />
+          <img class="charity__image" src="assets/img/report_church/3.jpg" alt="report_church_photo" />
+          <button
+            [routerLink]="['/gallery']"
+            [queryParams]="{ topic:'report_church' }"
+            class="charity__image charity__image_last"
+          >
+            <img class="charity__image" src="assets/img/report_church/4.jpg" alt="report_church_photo" />
+            <div class="plus-icon">+</div>
+          </button>
         </div>
       </div>
     </div>

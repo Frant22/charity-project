@@ -66,6 +66,13 @@ export class CarouselComponent implements OnInit {
       case 'autumn_holiday_2019':
         this.slides = this.appService.topics.autumn_holiday_2019;
         break;
+
+      case 'report_church':
+        this.slides = this.appService.topics.report_church;
+        break;
+
+      case 'vlad_birthday_2022':
+        this.slides = this.appService.topics.vlad_birthday_2022;
     }
   }
 }

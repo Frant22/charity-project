@@ -1,11 +1,11 @@
-<div class="events">
-  <div class="events__wrapp">
+<div class="events" [ngSwitch]="language">
+  <div *ngSwitchCase="'Ukrainian'" class="events__wrapp">
     <div class="events__block">
       <a [routerLink]="['/gallery']"
          [queryParams]="{ topic:'saint_nicolaus_2021' }"
       >
-        <div class="events__text">Святого Миколая 2021</div>
-        <div class="events__photo"><img src="assets/img/events/1.jpg" /></div>
+        <div class="events__text">Свято Святого Миколая 2021</div>
+        <div class="events__photo"><img src="assets/img/events/1.jpg" alt="event-photo" /></div>
       </a>
     </div>
 
@@ -14,7 +14,7 @@
          [queryParams]="{ topic:'new_year_2018' }"
       >
         <div class="events__text">Новий Рік 2018</div>
-        <div class="events__photo"><img src="assets/img/events/2.jpg" /></div>
+        <div class="events__photo"><img src="assets/img/events/2.jpg" alt="event-photo" /></div>
       </a>
     </div>
 
@@ -23,7 +23,7 @@
          [queryParams]="{ topic:'knowledge_day_2018' }"
       >
         <div class="events__text">День знань 2018</div>
-        <div class="events__photo"><img src="assets/img/events/3.jpg" /></div>
+        <div class="events__photo"><img src="assets/img/events/3.jpg" alt="event-photo" /></div>
       </a>
     </div>
 
@@ -32,7 +32,7 @@
          [queryParams]="{ topic:'sasha_birthday_2016' }"
       >
         <div class="events__text">День народження Саші у 2016 році</div>
-        <div class="events__photo"><img src="assets/img/events/4.jpg" /></div>
+        <div class="events__photo"><img src="assets/img/events/4.jpg" alt="event-photo" /></div>
       </a>
     </div>
 
@@ -41,7 +41,7 @@
          [queryParams]="{ topic:'kostya_birthday_2016' }"
       >
         <div class="events__text">День народження Кості у 2016 році</div>
-        <div class="events__photo"><img src="assets/img/events/5.jpg" /></div>
+        <div class="events__photo"><img src="assets/img/events/5.jpg" alt="event-photo" /></div>
       </a>
     </div>
 
@@ -50,7 +50,7 @@
          [queryParams]="{ topic:'opening_2015' }"
       >
         <div class="events__text">Відкриття 2015</div>
-        <div class="events__photo"><img src="assets/img/events/6.jpg" /></div>
+        <div class="events__photo"><img src="assets/img/events/6.jpg" alt="event-photo" /></div>
       </a>
     </div>
 
@@ -59,7 +59,7 @@
          [queryParams]="{ topic:'fair_2014' }"
       >
         <div class="events__text">Ярмарок 2014</div>
-        <div class="events__photo"><img src="assets/img/events/7.JPG" /></div>
+        <div class="events__photo"><img src="assets/img/events/7.JPG" alt="event-photo" /></div>
       </a>
     </div>
 
@@ -68,7 +68,7 @@
          [queryParams]="{ topic:'fair_2014' }"
       >
         <div class="events__text">Новий Рік 2013</div>
-        <div class="events__photo"><img src="assets/img/events/8.jpg" /></div>
+        <div class="events__photo"><img src="assets/img/events/8.jpg" alt="event-photo" /></div>
       </a>
     </div>
 
@@ -77,7 +77,7 @@
          [queryParams]="{ topic:'autumn_holiday_2013' }"
       >
         <div class="events__text">Свято осені 2013</div>
-        <div class="events__photo"><img src="assets/img/events/9.jpg" /></div>
+        <div class="events__photo"><img src="assets/img/events/9.jpg" alt="event-photo" /></div>
       </a>
     </div>
 
@@ -86,7 +86,440 @@
          [queryParams]="{ topic:'autumn_holiday_2019' }"
       >
         <div class="events__text">Свято осені 2019</div>
-        <div class="events__photo"><img src="assets/img/events/10.jpg" /></div>
+        <div class="events__photo"><img src="assets/img/events/10.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'vlad_birthday_2022' }"
+      >
+        <div class="events__text">
+          День народження Влада 2022
+          <br>
+          Піратська вечірка
+        </div>
+        <div class="events__photo"><img src="assets/img/events/11.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'Russian'" class="events__wrapp">
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'saint_nicolaus_2021' }"
+      >
+        <div class="events__text">Праздник Святого Николая 2021</div>
+        <div class="events__photo"><img src="assets/img/events/1.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'new_year_2018' }"
+      >
+        <div class="events__text">Новый Год 2018</div>
+        <div class="events__photo"><img src="assets/img/events/2.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'knowledge_day_2018' }"
+      >
+        <div class="events__text">День знаний 2018</div>
+        <div class="events__photo"><img src="assets/img/events/3.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'sasha_birthday_2016' }"
+      >
+        <div class="events__text">День рождения Саши в 2016 году</div>
+        <div class="events__photo"><img src="assets/img/events/4.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'kostya_birthday_2016' }"
+      >
+        <div class="events__text">День рождения Кости в 2016 году</div>
+        <div class="events__photo"><img src="assets/img/events/5.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'opening_2015' }"
+      >
+        <div class="events__text">Открытие 2015</div>
+        <div class="events__photo"><img src="assets/img/events/6.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'fair_2014' }"
+      >
+        <div class="events__text">Ярмарка 2014</div>
+        <div class="events__photo"><img src="assets/img/events/7.JPG" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'fair_2014' }"
+      >
+        <div class="events__text">Новый Год 2013</div>
+        <div class="events__photo"><img src="assets/img/events/8.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'autumn_holiday_2013' }"
+      >
+        <div class="events__text">Праздник Осени 2013</div>
+        <div class="events__photo"><img src="assets/img/events/9.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'autumn_holiday_2019' }"
+      >
+        <div class="events__text">Праздник Осени 2019</div>
+        <div class="events__photo"><img src="assets/img/events/10.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'vlad_birthday_2022' }"
+      >
+        <div class="events__text">
+          День рождения Влада 2022
+          <br>
+          Пиратская вечеринка
+        </div>
+        <div class="events__photo"><img src="assets/img/events/11.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'English'" class="events__wrapp">
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'saint_nicolaus_2021' }"
+      >
+        <div class="events__text">Saint Nicholas holiday 2021</div>
+        <div class="events__photo"><img src="assets/img/events/1.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'new_year_2018' }"
+      >
+        <div class="events__text">New Year 2018</div>
+        <div class="events__photo"><img src="assets/img/events/2.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'knowledge_day_2018' }"
+      >
+        <div class="events__text">Knowledge Day 2018</div>
+        <div class="events__photo"><img src="assets/img/events/3.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'sasha_birthday_2016' }"
+      >
+        <div class="events__text">Sasha's birthday 2016</div>
+        <div class="events__photo"><img src="assets/img/events/4.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'kostya_birthday_2016' }"
+      >
+        <div class="events__text">Kosta's birthday 2016</div>
+        <div class="events__photo"><img src="assets/img/events/5.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'opening_2015' }"
+      >
+        <div class="events__text">Opening 2015</div>
+        <div class="events__photo"><img src="assets/img/events/6.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'fair_2014' }"
+      >
+        <div class="events__text">Fair 2014</div>
+        <div class="events__photo"><img src="assets/img/events/7.JPG" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'fair_2014' }"
+      >
+        <div class="events__text">New Year 2013</div>
+        <div class="events__photo"><img src="assets/img/events/8.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'autumn_holiday_2013' }"
+      >
+        <div class="events__text">Autumn holiday 2013</div>
+        <div class="events__photo"><img src="assets/img/events/9.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'autumn_holiday_2019' }"
+      >
+        <div class="events__text">Autumn holiday 2019</div>
+        <div class="events__photo"><img src="assets/img/events/10.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'vlad_birthday_2022' }"
+      >
+        <div class="events__text">
+          Vlad's birthday 2022
+          <br>
+          Pirate party
+        </div>
+        <div class="events__photo"><img src="assets/img/events/11.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'Deutsche'" class="events__wrapp">
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'saint_nicolaus_2021' }"
+      >
+        <div class="events__text">Feiertag des Heiligen Nikolaus 2021</div>
+        <div class="events__photo"><img src="assets/img/events/1.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'new_year_2018' }"
+      >
+        <div class="events__text">Neujahr 2018</div>
+        <div class="events__photo"><img src="assets/img/events/2.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'knowledge_day_2018' }"
+      >
+        <div class="events__text">Wissen geben 2018</div>
+        <div class="events__photo"><img src="assets/img/events/3.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'sasha_birthday_2016' }"
+      >
+        <div class="events__text">Saschas Geburtstag 2016</div>
+        <div class="events__photo"><img src="assets/img/events/4.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'kostya_birthday_2016' }"
+      >
+        <div class="events__text">Kostas Geburtstag 2016</div>
+        <div class="events__photo"><img src="assets/img/events/5.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'opening_2015' }"
+      >
+        <div class="events__text">Die Eröffnung 2015</div>
+        <div class="events__photo"><img src="assets/img/events/6.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'fair_2014' }"
+      >
+        <div class="events__text">Die Messe 2014</div>
+        <div class="events__photo"><img src="assets/img/events/7.JPG" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'fair_2014' }"
+      >
+        <div class="events__text">Neujahr 2013</div>
+        <div class="events__photo"><img src="assets/img/events/8.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'autumn_holiday_2013' }"
+      >
+        <div class="events__text">Herbstferien 2013</div>
+        <div class="events__photo"><img src="assets/img/events/9.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'autumn_holiday_2019' }"
+      >
+        <div class="events__text">Herbstferien 2019</div>
+        <div class="events__photo"><img src="assets/img/events/10.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'vlad_birthday_2022' }"
+      >
+        <div class="events__text">
+          Vlads Geburtstag 2022
+          <br>
+          Piratenparty
+        </div>
+        <div class="events__photo"><img src="assets/img/events/11.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'Français'" class="events__wrapp">
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'saint_nicolaus_2021' }"
+      >
+        <div class="events__text">Fête de la Saint-Nicolas 2021</div>
+        <div class="events__photo"><img src="assets/img/events/1.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'new_year_2018' }"
+      >
+        <div class="events__text">Nouvel An 2018</div>
+        <div class="events__photo"><img src="assets/img/events/2.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'knowledge_day_2018' }"
+      >
+        <div class="events__text">Journée de la connaissance 2018</div>
+        <div class="events__photo"><img src="assets/img/events/3.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'sasha_birthday_2016' }"
+      >
+        <div class="events__text">L'anniversaire de Sasha en 2016</div>
+        <div class="events__photo"><img src="assets/img/events/4.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'kostya_birthday_2016' }"
+      >
+        <div class="events__text">L'anniversaire de Kostya en 2016</div>
+        <div class="events__photo"><img src="assets/img/events/5.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'opening_2015' }"
+      >
+        <div class="events__text">Ouverture en 2015</div>
+        <div class="events__photo"><img src="assets/img/events/6.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'fair_2014' }"
+      >
+        <div class="events__text">Foire 2014</div>
+        <div class="events__photo"><img src="assets/img/events/7.JPG" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'fair_2014' }"
+      >
+        <div class="events__text">Nouvel An 2013</div>
+        <div class="events__photo"><img src="assets/img/events/8.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'autumn_holiday_2013' }"
+      >
+        <div class="events__text">Vacances d'automne 2013</div>
+        <div class="events__photo"><img src="assets/img/events/9.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'autumn_holiday_2019' }"
+      >
+        <div class="events__text">Vacances d'automne 2019</div>
+        <div class="events__photo"><img src="assets/img/events/10.jpg" alt="event-photo" /></div>
+      </a>
+    </div>
+
+    <div class="events__block">
+      <a [routerLink]="['/gallery']"
+         [queryParams]="{ topic:'vlad_birthday_2022' }"
+      >
+        <div class="events__text">
+          Anniversaire de Vlada 2022
+          <br>
+          Fête des pirates
+        </div>
+        <div class="events__photo"><img src="assets/img/events/11.jpg" alt="event-photo" /></div>
       </a>
     </div>
   </div>

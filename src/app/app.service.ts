@@ -423,6 +423,40 @@ export class AppService {
       {img: "assets/img/autumn_holiday_2019/47.JPG"},
       {img: "assets/img/autumn_holiday_2019/48.JPG"},
     ],
+
+    report_church: [
+      {img: "assets/img/report_church/1.jpg"},
+      {img: "assets/img/report_church/2.jpg"},
+      {img: "assets/img/report_church/3.jpg"},
+      {img: "assets/img/report_church/4.jpg"},
+      {img: "assets/img/report_church/5.jpg"},
+      {img: "assets/img/report_church/6.jpg"},
+      {img: "assets/img/report_church/7.jpg"},
+      {img: "assets/img/report_church/8.jpg"},
+    ],
+
+    vlad_birthday_2022: [
+      {img: "assets/img/vlad_birthday_2022/1.jpg"},
+      {img: "assets/img/vlad_birthday_2022/2.jpg"},
+      {img: "assets/img/vlad_birthday_2022/3.jpg"},
+      {img: "assets/img/vlad_birthday_2022/4.jpg"},
+      {img: "assets/img/vlad_birthday_2022/5.jpg"},
+      {img: "assets/img/vlad_birthday_2022/6.jpg"},
+      {img: "assets/img/vlad_birthday_2022/7.jpg"},
+      {img: "assets/img/vlad_birthday_2022/8.jpg"},
+      {img: "assets/img/vlad_birthday_2022/9.jpg"},
+      {img: "assets/img/vlad_birthday_2022/10.jpg"},
+      {img: "assets/img/vlad_birthday_2022/11.jpg"},
+      {img: "assets/img/vlad_birthday_2022/12.jpg"},
+      {img: "assets/img/vlad_birthday_2022/13.jpg"},
+      {img: "assets/img/vlad_birthday_2022/14.jpg"},
+      {img: "assets/img/vlad_birthday_2022/15.jpg"},
+      {img: "assets/img/vlad_birthday_2022/16.jpg"},
+      {img: "assets/img/vlad_birthday_2022/17.jpg"},
+      {img: "assets/img/vlad_birthday_2022/18.jpg"},
+      {img: "assets/img/vlad_birthday_2022/19.jpg"},
+      {img: "assets/img/vlad_birthday_2022/20.jpg"},
+    ]
   }
 
   getLanguage(): Observable<string> {
